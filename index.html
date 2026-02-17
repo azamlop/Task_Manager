@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <title>Task Manager | Alejandro Zambrana Lopez</title>
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="container">
+
+            <header class="header">
+
+                <div class="header__top-bar">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <div class="header__content">
+
+                    <div class="header__column">
+                        <h1 class="header__title">Task Manager</h1>
+                        <p class="header__subtitle">Organiza tus tareas de forma eficaz</p>
+                    </div>
+
+                    <div class="header__task-counter">
+                        <span class="total__task">Total: </span><span class="total__task--ux">x</span>
+                        <span class="pending__task">Pendientes: </span><span class="pending__task--ux">x</span>
+                        <span class="completed__task">Completadas: </span><span class="completed__task--ux">x</span>
+                    </div>
+                </div>
+
+            </header>
+
+            <section class="task-area">
+
+                <section class="task-area__form">
+
+                    <form class="task-form" novalidate>
+
+                        <h2 class="form-title">Crear nueva tarea</h2>
+
+                        <input type="text" class="form-input" placeholder="Título" required>
+                        <input type="text" class="form-input" placeholder="Descipción">
+
+                        <div class="row">
+
+                            <label for="priority" class="form-label">Prioridad: </label>
+                            <select name="priority" id="priority" class="form-select">
+                                <option selected disabled>Selecciona el tipo de prioridad</option>
+                                <option value="low">Baja</option>
+                                <option value="mid">Media</option>
+                                <option value="high">Alta</option>
+                            </select>
+
+                            <button class="form-btn">Agregar tarea</button>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+                <section class="task-area__searcher">
+                    <div class="filters">
+                        <button class="filter" data-filter="all">Todas</button>
+                        <button class="filter" data-filter="pending">Pendientes</button>
+                        <button class="filter" data-filter="done">Completadas</button>
+                        <select name="filter-priority" id="filter-priority" class="filter-select">
+                            <option selected disabled>Prioridad</option>
+                            <option value="low">Baja</option>
+                            <option value="mid">Media</option>
+                            <option value="high">Alta</option>
+                        </select>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" class="search-btn" placeholder="Buscar tareas...">
+                    </div>
+                </section>
+
+                <section class="task-area__list">
+
+                    <ul class="task-list">
+
+                        <li class="task-card">
+
+                            <div class="task-card__content">
+                                <h4 class="task-card__title">Ganar Premier</h4>
+                                <p class="task-card__description">Hoy toca valorant al fallo</p>
+
+                                <div class="task-card__actions">
+                                    <button class="task-card__btn">✔</button>
+                                    <button class="task-card__btn">🧺</button>
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+                <section class="task-area__empty-state">
+
+                    <div class="empty-state">
+                        <img src="" alt="">
+                        <p class="empty-state__title">No hay tareas pendientes</p>
+                        <p class="empty-state__subtitle">¡Todo está al día!</p>
+                    </div>
+
+                </section>
+
+            </section>
+
+        </div>
+    </div>
+
+</body>
+</html>

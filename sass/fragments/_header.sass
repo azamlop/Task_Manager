@@ -1,0 +1,43 @@
+body
+  .app
+    .container
+      .header
+        color: $text-inverted
+        background-color: $bg-header
+
+        .header__top-bar
+          display: flex
+          width: 100%
+          gap: 10px
+          padding: 8px 12px
+          background-color: $bg-header-top
+
+          .dot
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            background-color: $bg-dot
+
+        .header__content
+          display: flex
+          justify-content: space-around
+          padding: 20px 0
+
+          .header__column
+            display: flex
+            flex-direction: column
+            gap: 10px
+
+            .header__title
+              margin: 0
+              font-size: $font-xxl
+              font-weight: $font-semibold
+
+            .header__subtitle
+              margin: 0
+              font-size: $font-sm
+              font-weight: $font-regular
+
+        .header__task-counter
+          align-self: center
+          color: $text-main

@@ -1,0 +1,53 @@
+.app
+  .container
+    .task-area
+      display: flex
+      flex-direction: column
+      gap: 15px
+      padding: 0 50px
+
+      .task-area__form
+        margin-top: 20px
+        padding: 20px 15px
+        border-radius: 5px
+        background-color: $bg-card
+
+        .task-form
+          display: flex
+          flex-direction: column
+          gap: 12px
+
+          .form-title
+            font-size: $font-lg
+            font-weight: $font-semibold
+
+          .form-input
+            padding: 8px
+            border: $border-strong 1px solid
+            border-radius: 5px
+
+          .row
+            display: grid
+            grid-template-columns: auto 1fr auto
+            align-items: center
+            gap: 16px
+
+            .form-label
+              font-size: $font-md
+              font-weight: $font-semibold
+
+            .form-select
+              width: 220px
+              padding: 6px
+              border: $border-strong 1px solid
+              border-radius: 5px
+              color: $text-main
+
+
+            .form-btn
+              padding: 10px 20px
+              font-size: $font-sm
+              border: none
+              border-radius: 5px
+              color: $text-inverted
+              background-color: $bg-btn

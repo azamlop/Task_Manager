@@ -1,0 +1,156 @@
+/* Brand / Primary */
+/* Backgrounds */
+/* Text */
+/* Borders & dividers */
+/* States */
+/* Font family */
+/* Font sizes */
+/* Font weights */
+/* Line heights */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+  color: #385377;
+  background-color: #f1f4f8;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+select, button {
+  cursor: pointer;
+}
+
+body .app .container .header {
+  color: #FFFFFF;
+  background-color: #a1c7ec;
+}
+body .app .container .header .header__top-bar {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  padding: 8px 12px;
+  background-color: #b8d6f4;
+}
+body .app .container .header .header__top-bar .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d7e7f6;
+}
+body .app .container .header .header__content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+body .app .container .header .header__content .header__column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .app .container .header .header__content .header__column .header__title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+}
+body .app .container .header .header__content .header__column .header__subtitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+body .app .container .header .header__task-counter {
+  align-self: center;
+  color: #385377;
+}
+
+.app .container .task-area {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 50px;
+}
+.app .container .task-area .task-area__form {
+  margin-top: 20px;
+  padding: 20px 15px;
+  border-radius: 5px;
+  background-color: #fefefe;
+}
+.app .container .task-area .task-area__form .task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.app .container .task-area .task-area__form .task-form .form-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.app .container .task-area .task-area__form .task-form .form-input {
+  padding: 8px;
+  border: #C8D0D8 1px solid;
+  border-radius: 5px;
+}
+.app .container .task-area .task-area__form .task-form .row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 16px;
+}
+.app .container .task-area .task-area__form .task-form .row .form-label {
+  font-size: 16px;
+  font-weight: 600;
+}
+.app .container .task-area .task-area__form .task-form .row .form-select {
+  width: 220px;
+  padding: 6px;
+  border: #C8D0D8 1px solid;
+  border-radius: 5px;
+  color: #385377;
+}
+.app .container .task-area .task-area__form .task-form .row .form-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  background-color: #2e7bbe;
+}
+
+.app .container .task-area .task-area__searcher {
+  display: flex;
+  justify-content: space-between;
+}
+.app .container .task-area .task-area__searcher .filters {
+  display: flex;
+  gap: 10px;
+}
+.app .container .task-area .task-area__searcher .filters .filter {
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  border: #C8D0D8 1px solid;
+  border-radius: 5px;
+  color: #385377;
+}
+.app .container .task-area .task-area__searcher .filters .filter-select {
+  padding: 6px;
+  border: #C8D0D8 1px solid;
+  border-radius: 5px;
+  color: #385377;
+}
+.app .container .task-area .task-area__searcher .search-bar .search-btn {
+  padding: 10px 120px 10px 12px;
+  border: #C8D0D8 1px solid;
+  border-radius: 5px;
+}
